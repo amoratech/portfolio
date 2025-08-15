@@ -1,0 +1,15 @@
+.circle {
+  position: absolute;
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: blur(90px); 
+  z-index: -10;
+  
+}
+body{
+  background: var(--color-background);
+  transition: background-color 2s ease;
+}
+
