@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@mantine/core/styles.css";
 import "./globals.css";
-
+import theme from "./theme";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import dynamic from "next/dynamic";
 import Background from "@/components/background/Background";
@@ -43,6 +43,7 @@ export default function RootLayout({
       >
         <MantineProvider
           defaultColorScheme={DEFAULT_SCHEME}
+          theme={theme}
         >
           <div
             style={{
