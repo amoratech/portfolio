@@ -9,7 +9,6 @@
   
 }
 body{
-  background: var(--color-background);
   transition: background-color 2s ease;
 }
 

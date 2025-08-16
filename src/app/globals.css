@@ -1,16 +1,30 @@
-/* globals.css */
+
 @import "tailwindcss";
 
-
+@font-face {
+  font-family: 'Fredoka';
+  src: url('/fonts/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900; /* variable font weight range */
+  font-style: normal;
+  font-display: swap;
+}
 
 :root,
 [data-mantine-color-scheme="light"] {
   --background: #ffffff;
   --foreground: #171717;
+  --header:#7a7a7a16;
+  --projectComponent: #c2c1c160;
 }
-
 [data-mantine-color-scheme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --header:#49494971;
+  --projectComponent: #6464643f;
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Fredoka', Arial, sans-serif;
+}
